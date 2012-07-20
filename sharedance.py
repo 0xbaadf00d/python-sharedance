@@ -58,7 +58,11 @@ class   Sharedance:
                          chr(k_len & 0xff))
             data += key
             self._hSock.send(data)
-            value = self._hSock.recv(4096)
+            value = ""
+            while 1:
+                t = self._hSock.recv(512)
+                value += t
+                if not t: break
             value = json.loads(value)
         except:
             value = None

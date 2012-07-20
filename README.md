@@ -1,7 +1,7 @@
 python-sharedance
 =================
 
-Sharedance library for Python.
+Sharedance class for Python.
 
 ```python
 from sharedance import Sharedance

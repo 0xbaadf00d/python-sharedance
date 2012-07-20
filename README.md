@@ -1,7 +1,7 @@
 python-sharedance
 =================
 
-Sharedance class for Python.
+Sharedance class for Python and session handler for Django
 
 ## sharedance.py
 ```python

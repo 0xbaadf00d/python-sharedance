@@ -10,9 +10,6 @@ class   Sharedance:
         self._port = port
         self._timeout = timeout if timeout > 0 else 5
 
-    def __del__(self):
-        self._hSock.close()
-
     def __connect(self):
         self._hSock = socket.socket()
         self._hSock.settimeout(self._timeout)

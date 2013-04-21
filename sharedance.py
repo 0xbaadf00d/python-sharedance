@@ -23,7 +23,7 @@ class   Sharedance:
             v_len = len(value)
             k_len = len(key)
             data  = 'S'
-            data += pack("cccccccc", 
+            data += pack("cccccccc",
                          chr((k_len >> 24) & 0xff),
                          chr((k_len >> 16) & 0xff),
                          chr((k_len >> 8) & 0xff),
